@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="neeth.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <a href="home.html">Home</a>
+      <a href="regi.html">Register</a>
+
+      <a href="login.html">Login</a>
+      <a href="catalog.html">Catalog</a>
+      <a href="cart.html">Cart</a>
+      <a href="orders.html">Orders</a>
+      <a href="#">Payment by card</a>
+      <a href="profile.html">Profile</a>
+      *
+    </div>
+
+    <!-- Payment form -->
+    <div class="payment-form">
+      <form action="registration_process.php" method="post">
+        <div class="row">
+          <div class="col-25">
+            <label for="fname">First Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="fname"
+              name="firstname"
+              placeholder="Your name.."
+            />
+            <div class="error-message" id="fname-error"></div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-25">
+            <label for="lname">Last Name</label>
+          </div>
+          <div class="col-75">
+            <input
+              type="text"
+              id="lname"
+              name="lastname"
+              placeholder="Your last name.."
+            />
+            <div class="error-message" id="lname-error"></div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="country">Country</label>
+          </div>
+          <div class="col-75">
+            <select id="country" name="country">
+              <option value="australia">India</option>
+              <option value="canada">Canada</option>
+              <option value="usa">USA</option>
+            </select>
+            <div class="error-message" id="country-error"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="cardtype">Card Type</label>
+          </div>
+          <div class="col-75">
+            <select id="cardtype" name="cardtype">
+              <option value="visa">Visa</option>
+              <option value="mastercard">Mastercard</option>
+
+              <option value="amex">American Express</option>
+            </select>
+            <div class="error-message" id="cardtype-error"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="cardnumber">Card Number</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="cardnumber" name="cname" placeholder="your card number" />
+            <div class="error-message" id="cname-error"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="cvv">CVV</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="cvv" name="cvname" placeholder="your cvv" />
+
+            <div class="error-message" id="cvname-error"></div>
+          </div>
+        </div>
+        
+        <div class="row">
+          <div class="col-25">
+            <label for="name on card">Name on card</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="c1name" placeholder="your name on card" />
+            <div class="error-message" id="c1name-error"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-25">
+            <label for="expiry">Expiry Date</label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="edate" placeholder="dd/mm/yyyy" />
+            <div class="error-message" id="edate-error"></div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-75">
+            <input type="submit" value="Proceed" />
+          </div>
+        </div>
+      </form>
+    </div>
+  </body>
+  <script src="new.js"></script>
+</html>
